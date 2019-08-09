@@ -1,0 +1,49 @@
+#wCon{
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    width:600px;
+    height:900px;
+    background-color: white;
+}
+
+.rCon{/*rCon为row container*/
+    width: 625px;
+    height: 100px;
+    background-color: black;
+}
+
+.cell{
+    float: left;
+    height: 100px;
+    margin: 0;
+    display: inline-block;
+    background-color: rgba(255,255,255,0);
+    transform: skewX(-15deg);
+    animation: divRotate 5s linear infinite;
+}
+
+@keyframes divRotate {
+    0%{}
+    60%{transform: perspective(400px) skewX(-10deg) rotateY(180deg)}
+    100%{transform: perspective(400px) skewX(-10deg) rotateY(180deg)/*60-100为展示停留时间*/}
+}
+
+.div_width_1{
+    width: 10px;
+}
+
+.div_width_2{
+    width: 20px;
+}
+.div_width_3{
+    width: 30px;
+}
+
+.redBack{
+    background-color: red;
+}
+
+.gap{
+    margin-left: 14px;
+}
